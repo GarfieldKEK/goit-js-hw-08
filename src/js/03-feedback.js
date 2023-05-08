@@ -1,6 +1,6 @@
 import throttle from "lodash.throttle"
 const form = document.querySelector(".feedback-form")
-form.addEventListener("input", throttle((e)=>{
+form.addEventListener("input", throttle(()=>{
     const data = {
         email: form.elements.email.value,
         message: form.elements.message.value
